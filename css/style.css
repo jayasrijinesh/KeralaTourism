@@ -1,0 +1,75 @@
+body{
+    background-image: url(/images/Home.jpg);
+    background-attachment: fixed; 
+    /* background-size:100%; */
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+label{
+    width:200px;
+    display: inline-block;
+
+}
+#SignIn{
+    position: fixed;
+    background-image:url();
+    opacity: 0.05;
+    width:50px;
+}
+.myCarousel{
+    margin: 20px;
+}
+.carousel-item,  .carousel-item.active {
+    /* display: block !important; */
+    height: 300px;
+    width: 800px;
+}
+.topInfo{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white !important;
+}
+/* topInfo#info{ */
+    /* float: left; */
+/* } */
+topInfo#ph{
+    float: right;
+}
+.Intro{
+    margin: 10px ;
+    border :1 px fixed;
+    padding: 2px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background-color:#18183c ;
+    color: #c19e34f5 !important;
+}
+
+footer {
+text-align: center;
+position: relative;
+
+}
+.thumbnails { display: block; overflow-x: scroll; white-space: nowrap; }
+
+.SignUp{
+    margin: 0 auto;
+   padding:10px;
+   width:650px;
+   /* display: inline; */
+}
+
+    .SignUp   {
+    background-image: url(/images/SignUp.jpg);
+
+}
+.SignIn{
+    background-image: url(/images/SignIn.jpg);
+    margin: 0 auto;
+   padding:10px;
+   width:300px;
+   /* display: inline; */
+}
+.caption{
+    color: white;
+}

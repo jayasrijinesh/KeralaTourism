@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+        <script src="validate.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -Section 1 and 2 -->
+    <header>
+
+        <!-- 1. Top Header Contact Info Starts-->
+        <div class="topInfo">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                  <p> <span><i class="fa fa-envelope"></i><a href="mailto:xxx@ictastudents.org.com">
+                        info@ictastudents.org</a></span> </p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                  <p> <span><img src="" style="width:20px; margin-right:5px;"><a href="#">+91-0000-0000-00</a></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        <!-- Top Header Contact Info Ends here -->
+
+        <!-- 2. Menus Starts here -->
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="district.html">District</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="SignIn.html">SignIn</a>
+                        </li>
+                        <li class="nav-item active">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="SignUp.html">SignUp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Booking</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </nav>
+        <!-- Header Menus Ends here -->
+
+    </header>
+    <!-- Header Section Ends here -->
+
+    <div class="SignUp" style="margin-top: 30px;">
+        <div class="col-lg-8">
+            <form  action="Success.html"  onsubmit="return validation(true)" style="border:0px solid #ccc">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <label for="email"><b>Email</b></label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Enter Email" id ="iEmail" name="email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <label for="Phone"><b>Phone</b></label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Enter Phone" id ="iPhone" name="phone" required>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <th></th>
+                            <td>
+                                <label for="psw"><b>Password</b></label>
+                            </td>
+                            <td>
+                                <input type="password" placeholder="Enter Password" id="iPassword" name="psw" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                            <td>
+                                <label for="psw-repeat"><b>Repeat Password</b></label>
+                            </td>
+                            <th>
+                                <input type="password" placeholder="Repeat Password" id="iRPassword" name="psw-repeat" required>
+                            </th>
+                        </tr>
+
+                    </table>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+                    <label for="Validation Msg" name="ValMsg"><b></b></label>
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                    </p>
+
+
+
+
+
+
+
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn" >Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
